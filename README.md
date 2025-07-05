@@ -29,13 +29,6 @@ Click cells to mark them, import your own Bingo phrases (paste 25 lines), export
 └── README.md        # README file
 ```
 
-## 📄 .gitignore
-
-```
-*.log
-.DS_Store
-```
-
 ## 📬 Connect
 
 - [GitHub](https://github.com/ItsAlexIK)

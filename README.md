@@ -19,19 +19,6 @@ Click cells to mark them, import your own Bingo phrases (paste 25 lines), export
 - No backend required — pure HTML/CSS/JS  
 - Optional: GitHub Pages for easy free hosting  
 
-## 🔧 Setup & Usage
-
-1. Clone or download this repo:  
-   ```bash
-   git clone https://github.com/YourUsername/discord-bingo.git
-   cd discord-bingo
-   ```
-2. Open `index.html` in your browser.  
-3. Click cells to mark them.  
-4. Paste your own 25 Bingo phrases (one per line) into the text box and click **Import Phrases** to customize.  
-5. Use **Copy Current Board** to export your board text.  
-6. Use **Reset** to clear selections.
-
 ## 📂 File Structure
 
 ```

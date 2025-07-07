@@ -82,4 +82,42 @@ function resetBingo() {
   });
 }
 
+function enforceMaxLines(e) {
+  const lines = textImportArea.value.split('\n');
+  if (lines.length > 25) {
+    textImportArea.value = lines.slice(0, 25).join('\n');
+    updateGutter();
+    if (e && e.type === 'paste') {
+      e.preventDefault();
+    }
+  }
+}
+
+const textImportArea = document.getElementById('textImportArea');
+const gutter = document.getElementById('gutter');
+
+function updateGutter() {
+  const lines = textImportArea.value.split('\n').length;
+  let gutterHTML = '';
+  for (let i = 1; i <= Math.max(25, lines); i++) {
+    gutterHTML += i + '<br>';
+  }
+  gutter.innerHTML = gutterHTML;
+}
+
+if (textImportArea && gutter) {
+  textImportArea.rows = 25;
+  updateGutter();
+  textImportArea.addEventListener('input', function(e) {
+    enforceMaxLines(e);
+    updateGutter();
+  });
+  textImportArea.addEventListener('paste', function(e) {
+    setTimeout(() => {
+      enforceMaxLines(e);
+      updateGutter();
+    }, 0);
+  });
+}
+
 checkBingo();

@@ -73,6 +73,33 @@ textarea {
     resize: vertical;
 }
 
+#gutter {
+    min-width: 2em;
+    border: 1px solid #444;
+    border-right: none;
+    background: #222;
+    color: #aaa;
+    padding: 8px 6px 8px 0;
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 6px 0 0 6px;
+    user-select: none;
+    text-align: right;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#textImportArea {
+    border-radius: 0 6px 6px 0;
+    border-left: none;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    min-height: 37.5px;
+    box-sizing: border-box;
+}
+
 .btn-group {
     display: flex;
     gap: 10px;

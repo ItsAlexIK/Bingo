@@ -8,7 +8,8 @@ Click cells to mark them, import your own Bingo phrases (paste 25 lines), export
 ## ✨ Features
 
 - ✅ Click to select/deselect Bingo cells  
-- 📝 Import custom Bingo phrases by pasting 25 lines of text  
+- 📝 Import custom Bingo phrases by pasting 25 lines of text
+- 🔢 Line-numbered import for improved navigation and clarity when entering phrases
 - 📋 Export current board and marks as plain text (copied to clipboard)  
 - 🎉 Automatic Bingo detection (rows, columns, diagonals)  
 - 💾 Persistent selection stored in browser `localStorage`  
